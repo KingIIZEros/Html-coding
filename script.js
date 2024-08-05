@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cartItemsContainer.appendChild(cartItemElement);
         });
 
-        // Add event listeners to remove buttons
         document.querySelectorAll('.remove-item').forEach(button => {
             button.addEventListener('click', (event) => {
                 const index = event.target.dataset.index;
@@ -80,7 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
         alert(`สั่งซื้อสินค้าเรียบร้อย! ยอดรวม: ${total} บาท`);
 
-        // Reset cart
         cart.length = 0;
         renderCartItems();
         updateCartTotal();
