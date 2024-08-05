@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์สั่งอาหารออนไลน์</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="special-dishes.html">เมนูอาหาร</a></li>
+                <li><a href="#about">เกี่ยวกับเรา</a></li>
+                <li><a href="#contact">ติดต่อเรา</a></li>
+                <li><a href="#cart" class="cart-button">ตะกร้าสินค้า (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>ยินดีต้อนรับสู่เว็บไซต์สั่งอาหารออนไลน์</h1>
+            <p>สั่งอาหารง่าย ๆ ได้ทุกที่ทุกเวลา</p>
+        </section>
+
+        <section id="menu">
+            <h2>เมนูอาหารยอดนิยม</h2>
+            <div class="food-menu">
+                <div class="food-item" data-id="1" data-name="อาหารจานเด็ด" data-price="150">
+                    <img src="https://static.thairath.co.th/media/B6FtNKtgSqRqbnNsbJbu5LEK4pz4sOQhxiopMiHfqDOKdfJGbvM8jMMxoWYTOXzLyn4tD.jpg" alt="อาหารจานเด็ด">
+                    <h3><a href="special-dishes.html">อาหารจานเด็ด</a></h3>
+                    <button onclick="window.location.href='special-dishes.html?dish=1'">เลือกอาหาร</button>
+                </div>
+                <div class="food-item" data-id="2" data-name="อาหารจานด่วน" data-price="120">
+                    <img src="https://www.sentangsedtee.com/wp-content/uploads/2019/12/23733.jpg" alt="อาหารจานด่วน">
+                    <h3><a href="special-dishes.html">อาหารจานด่วน</a></h3>
+                    <button onclick="window.location.href='special-dishes.html?dish=2'">เลือกอาหาร</button>
+                </div>
+                <div class="food-item" data-id="3" data-name="ของหวาน" data-price="80">
+                    <img src="https://agarmermaid.com/wp-content/uploads/2021/09/shutterstock_2022331592-1-1-1024x576.jpg" alt="ของหวาน">
+                    <h3><a href="special-dishes.html">ของหวาน</a></h3>
+                    <button onclick="window.location.href='special-dishes.html?dish=3'">เลือกอาหาร</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>เกี่ยวกับเรา</h2>
+            <p>เราคือผู้ให้บริการอาหารออนไลน์ที่เน้นความสะดวกสบายและความอร่อย</p>
+        </section>
+        
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cart" class="cart-modal">
+        <div class="cart-content">
+            <h2>ตะกร้าสินค้าของคุณ</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="checkout">สั่งซื้อสินค้า</button>
+            <button id="close-cart">ปิดตะกร้า</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 เว็บไซต์สั่งอาหารออนไลน์</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

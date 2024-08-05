@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนูอาหารจานเด็ด</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="#special-dishes-1">เมนูอาหาร</a></li>
+                <li><a href="#about">เกี่ยวกับเรา</a></li>
+                <li><a href="#contact">ติดต่อเรา</a></li>
+                <li><a href="#cart" class="cart-button">ตะกร้าสินค้า (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="special-dishes-1">
+            <h1>เมนูอาหารตามสั่ง</h1>
+            <div class="food-menu">
+                <div class="food-item" data-id="4" data-name="ข้าวกะเพราหมูกรอบ" data-price="50">
+                    <img src="https://i.ytimg.com/vi/16Odh9KFPK0/maxresdefault.jpg" alt="อาหารตามสั่ง">
+                    <h3>ข้าวกะเพราหมูกรอบ</h3>
+                    <p>ราคา: 50 บาท</p>
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+                <div class="food-item" data-id="6" data-name="ผัดพริกแกงเนื้อ" data-price="60">
+                    <img src="https://i.ytimg.com/vi/gWy__5cVqQQ/maxresdefault.jpg" alt="อาหารตามสั่ง">
+                    <h3>ผัดพริกแกงเนื้อ</h3>
+                    <p>ราคา: 60 บาท</p>
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+                <div class="food-item" data-id="7" data-name="นื้อผัดน้ำมันหอย" data-price="50">
+                    <img src="https://food.mthai.com/app/uploads/2019/06/Stir-Fried-Beef-with-Oyster-Sauce-28.jpg" alt="อาหารตามสั่ง">
+                    <h3>เนื้อผัดน้ำมันหอย</h3>
+                    <p>ราคา: 50 บาท</p>
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+                <div class="food-item" data-id="8" data-name="ข้าวไก่ผัดผงกะหรี่" data-price="50">
+                    <img src="https://img.wongnai.com/p/1920x0/2019/07/16/e78ae88eaec4418ea43f076ceeed060e.jpg" alt="อาหารตามสั่ง">
+                    <h3>ข้าวไก่ผัดผงกะหรี่</h3>
+                    <p>ราคา: 50 บาท</p>
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="special-dishes-2">
+            <h1>เมนูเส้น</h1>
+            <div class="food-menu">
+                <div class="food-item" data-id="9" data-name="ก๋วยเตี๋ยวเรือ" data-price="55">
+                    <img src="https://eknoodle.com/wp-content/uploads/2022/12/44-1024x749.jpg" alt="เมนูเส้น">
+                    <h3>ก๋วยเตี๋ยวเรือ</h3>
+                    <p>ราคา: 55 บาท</p>
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+                <div class="food-item" data-id="10" data-name="ก๋วยเตี๋ยวเนื้อ" data-price="60">
+                    <img src="https://static.amarintv.com/images/upload/editor/source/Program/longpung-guide/guide9/rotchunyeambeefnoodle/771918.jpg" alt="เมนูเส้น">
+                    <h3>ก๋วยเตี๋ยวเนื้อ</h3>
+                    <p>ราคา: 60 บาท</p>
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+                <div class="food-item" data-id="11" data-name="ก๋วยเตี๋ยวเนื่อเปื่อย" data-price="50">
+                    <img src="https://f.ptcdn.info/803/061/000/pkvbkoz265l5UjnJDmN-o.jpg" alt="เมนูเส้น">
+                    <h3>ก๋วยเตี๋ยวเนื่อเปื่อย</h3>
+                    <p>ราคา: 50 บาท</p>
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+                <div class="food-item" data-id="12" data-name="ก๋วยเตี๋ยวมะระไก่" data-price="55">
+                    <img src="https://i.ytimg.com/vi/LVdyK8YN6Ms/maxresdefault.jpg" alt="เมนูเส้น">
+                    <h3>ก๋วยเตี๋ยวมะระไก่</h3>
+                    <p>ราคา: 55 บาท</p>
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="special-dishes-3">
+            <h1>ของหวาน</h1>
+            <div class="food-menu">
+                <div class="food-item" data-id="13" data-name="บัวลอยไข่หวาน" data-price="20">
+                    <img src="https://img.kapook.com/u/2022/wanwanat/1079595941.jpg" alt="ของหวาน">
+                    <h3>บัวลอยไข่หวาน</h3>
+                    <p>ราคา: 20 บาท</p>
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+                <div class="food-item" data-id="14" data-name="กล้วยบวชชี" data-price="15">
+                    <img src="https://img.wongnai.com/p/1920x0/2019/11/24/6e46264e0f2e4a3c99dd65e1e4c9fbd9.jpg" alt="ของหวาน">
+                    <h3>กล้วยบวชชี</h3>
+                    <p>ราคา: 15 บาท</p>
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+                <div class="food-item" data-id="15" data-name="สังขยาฟักทอง" data-price="25">
+                    <img src="https://agarmermaid.com/wp-content/uploads/2021/04/Depositphotos_105840872_l-2015-1-1024x682.jpg.webp" alt="ของหวาน">
+                    <h3>สังขยาฟักทอง</h3>
+                    <p>ราคา: 15 บาท</p>
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+                <div class="food-item" data-id="16" data-name="ทับทิมกรอบน้ำกะทิ" data-price="25">
+                    <img src="https://agarmermaid.com/wp-content/uploads/2021/09/shutterstock_1538946746-1-1-1024x735.jpg.webp" alt="ของหวาน">
+                    <h3>ทับทิมกรอบน้ำกะทิ</h3>
+                    <p>ราคา: 10 บาท</p>
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <div id="cart" class="cart-modal">
+        <div class="cart-content">
+            <h2>ตะกร้าสินค้าของคุณ</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="checkout">สั่งซื้อสินค้า</button>
+            <button id="close-cart">ปิดตะกร้า</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 เว็บไซต์สั่งอาหารออนไลน์</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
